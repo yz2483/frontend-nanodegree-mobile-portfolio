@@ -4,11 +4,13 @@ Your challenge, if you wish to accept it (and we sure hope you will), is to opti
 
 To get started, check out the repository, inspect the code,
 
+
 ############ Reference websites ####
 https://piazza.com/
 https://developer.chrome.com/devtools/docs/timeline
 https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
 https://developers.google.com/speed/articles/optimizing-javascript
+
 
 ############## Tools ###############
 https://www.google.com/analytics
