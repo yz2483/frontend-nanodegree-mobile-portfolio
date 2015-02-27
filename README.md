@@ -1,8 +1,5 @@
 ## Website Performance Optimization portfolio project
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
-
-To get started, check out the repository, inspect the code,
 
 
 ############ Reference websites ####
@@ -21,7 +18,7 @@ http://compressnow.com/
 ngrok: https://ngrok.com/
 github: https://github.com
 
-Steps I took to optimise the portfolio
+###########  Steps I took to optimise the portfolio  ################
 I used https://www.google.com/analytics to analyze porfolio web page.
 optimised images by using tinypng.com and compressnow.com
 moved js scripts to the bottom of the html file and made them async
