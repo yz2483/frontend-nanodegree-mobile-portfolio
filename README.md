@@ -47,12 +47,19 @@ I also use translateX method inside updatePositions function
 
 The improved portfolio can be downloaded from https://github.com/yz2483/frontend-nanodegree-mobile-portfolio.git
 To test the page speed I used Python web server and ngrok:
+
 Assume ngrok and Python are downloaded and installed.
+
 1. Via comand Line, go to my porfolio project folder
+
 2. Run command:py -m http.server 7777
+
 3. Open another comand line window
+
 4. Go to ngrok folder
+
 5. Get the public URL of my local web service via command: ngrok 7777 
+
 6. Use the public URL to test page speed on google pagespeend insight - https://developers.google.com/speed/pagespeed/insights
 
 To check the frames per second I used Google Developer Tools
