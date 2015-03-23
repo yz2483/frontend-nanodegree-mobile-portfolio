@@ -36,7 +36,7 @@ There were various images that were linked to on the internet. I changed these t
 
 I used a variable to cache the scrolltop value on line 509 of the main.js file to improve the frames per second
 
-I added a separate variable on line 455 before for loop inside changePizzaSizes function of the main.js file for faster resizing
+I added a separate variable on line 455 before for loop inside changePizzaSizes function of the main.js file for faster resizing.
 I moved dx and newwidth outside the for loop inside changePizzaSizes function of the main.js file for faster resizing
 
 Move pizzasDiv variable ouside the loop on line 475 of the main.js file
