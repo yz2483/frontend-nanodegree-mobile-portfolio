@@ -24,7 +24,7 @@ Optimised images by using tinypng.com and compressnow.com
 
 Moved js scripts to the bottom of the html file and made them async
 
-I removed useless style used in css/style.css
+I removed useless style used in css/style.css and inlined css from style.css
 
 I used http://cssminifier.com/ to minify css 
 
@@ -34,15 +34,17 @@ Removed google font link inside index.html
 
 There were various images that were linked to on the internet. I changed these to local images which have been optimized
 
-I used a variable to cache the scrolltop value on line 509 of the main.js file to improve the frames per second
+main.js
 
-I added a separate variable on line 455 before for loop, also moved dx and newwidth outside the for loop inside changePizzaSizes function of the main.js file for faster resizing
+* I used a variable to cache the scrolltop value on line 509 of the main.js file to improve the frames per second
 
-Move pizzasDiv variable ouside the loop on line 475 of the main.js file
+* I added a separate variable on line 455 before for loop, also moved dx and newwidth outside the for loop inside changePizzaSizes function of the main.js file for faster resizing
 
-I added a separate variable for the faster use of the variable in the updatePosition function on line 509 of the main.js file
+* Move pizzasDiv variable ouside the loop on line 475 of the main.js file
 
-I also use translateX method inside updatePositions function
+* I added a separate variable for the faster use of the variable in the updatePosition function on line 509 of the main.js file
+
+* I also use translateX method inside updatePositions function to improve FPS performance
 
 
 The improved portfolio can be downloaded from https://github.com/yz2483/frontend-nanodegree-mobile-portfolio.git

@@ -450,7 +450,7 @@ var resizePizzas = function (size) {
 
     // Iterates through pizza elements on the page and changes their widths
     // Optimization 1: Created variable pizzaContainer before for loop for faster resizing   
-    // Optimization 2: moved dx and newwidth outside the for loop, no recalculation needed
+    // Optimization 2: moved dx and newwidth outside the for loop, no recalculation needed,calculate only once since all pizzas are the same size
     function changePizzaSizes(size) {
         var pizzaContainer = document.querySelectorAll(".randomPizzaContainer");
         var dx = determineDx(pizzaContainer[0], size);
@@ -473,7 +473,7 @@ var resizePizzas = function (size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
-//move pizzasDiv variable ouside the loop
+// Optimization:move pizzasDiv variable ouside the loop
 var pizzasDiv = document.getElementById("randomPizzas");
 for (var i = 2; i < 100; i++) { 
   pizzasDiv.appendChild(pizzaElementGenerator(i));
@@ -509,9 +509,13 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
+
+  //variable -goodNum to store the scrolltop value instead of accessing it in document throughout the loop
   var goodNum = document.body.scrollTop / 1250;
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin(goodNum + (i % 5));   
+
+    //use transform:translateX to improve FPS performance
     items[i].style.transform = 'translateX(' + (100*phase) + 'px)';
   }
 
