@@ -18,7 +18,7 @@ http://compressnow.com/
 ngrok: https://ngrok.com/
 github: https://github.com
 
-###########  Steps I took to optimise the portfolio  ################
+###########  Steps I took to optimize the portfolio  ################
 I used https://www.google.com/analytics to analyze porfolio web page.
 Optimised images by using tinypng.com and compressnow.com
 
@@ -27,6 +27,8 @@ Moved js scripts to the bottom of the html file and made them async
 I removed useless style used in css/style.css and inlined css from style.css
 
 I used http://cssminifier.com/ to minify css 
+
+I used http://jscompress.com/ to minify js files.
 
 I added media=print for print.css link inside index.html due that this css file is only used when printing
 
@@ -46,6 +48,17 @@ main.js
 
 * I also use translateX method inside updatePositions function to improve FPS performance
 
+* on line 540, reduced pizza number from 200 to 30, we only need 30 when generates the sliding pizzas on the page
+
+pizza.html
+
+* Took advice from Google Developer Tools Page Speed addon
+
+* Compressed/optimized pizza.png 
+
+* Use inline style-min.css,and minimised bootstrap-grid-min.css 
+
+* Use minimised main.min.js
 
 The improved portfolio can be downloaded from https://github.com/yz2483/frontend-nanodegree-mobile-portfolio.git
 To test the page speed I used Python web server and ngrok:
