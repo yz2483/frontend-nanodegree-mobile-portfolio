@@ -59,7 +59,7 @@ pizza.html
 
 * Use inline style-min.css,and minimised bootstrap-grid-min.css 
 
-* Use minimised main.min.js
+* Use minimised main.min.js. The main.js is also inside the same folder for review.
 
 The improved portfolio can be downloaded from https://github.com/yz2483/frontend-nanodegree-mobile-portfolio.git
 To test the page speed I used Python web server and ngrok:
