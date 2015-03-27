@@ -14,6 +14,7 @@ https://www.google.com/analytics
 https://developers.google.com/speed/pagespeed
 http://cssminifier.com/
 http://compressnow.com/
+http://jscompress.com/
 
 ngrok: https://ngrok.com/
 github: https://github.com
